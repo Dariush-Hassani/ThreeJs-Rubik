@@ -6,21 +6,21 @@ body {
 #reset-view {
   height: 40px;
   width: 100px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  color: white;
   border: 1px solid;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-#reset-view:hover {
+  margin-left: 25px;
+  margin-top: -10px;
   background-color: white;
   color: black;
+}
+#reset-view:hover {
+  background-color: black;
+  color: white;
 }
 #user-manual {
   color: white;
