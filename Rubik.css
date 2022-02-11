@@ -1,9 +1,39 @@
 body {
   margin: 0;
   overflow: hidden;
+  background-color: black;
 }
 #reset-view {
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  border: 1px solid;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+#reset-view:hover {
+  background-color: white;
+  color: black;
+}
+#user-manual {
+  color: white;
+  position: fixed;
+}
+#user-manual ul {
+  padding: 20px;
+  margin-top: 25px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 25px;
+  padding-inline-start: 35px;
+}
+#user-manual li {
+  padding: 2px 0;
 }

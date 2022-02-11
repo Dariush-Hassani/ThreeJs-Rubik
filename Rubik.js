@@ -357,6 +357,14 @@ const resetView = () => {
   }, 10);
 };
 
+const resize = () => {
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(window.devicePixelRatio * 1.5);
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  render();
+};
+
 initialScene();
 animate();
 
@@ -368,3 +376,4 @@ document.getElementById("root").addEventListener("touchmove", raycastMouseMove);
 window.addEventListener("touchend", resetValues);
 document.getElementById("reset-view").addEventListener("click", resetView);
 document.getElementById("reset-view").addEventListener("touchstart", resetView);
+window.addEventListener("resize", resize);
